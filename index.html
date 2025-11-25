@@ -18,13 +18,13 @@ if (!t) {
     let url;
 
     if (t.startsWith("INC")) {
-        url = "https://URL_PER_INC/" + t;
+        url = "https://enel.service-now.com/nav_to.do?uri=%2Ftext_search_exact_match.do?sysparm_search=" + t;
     } else if (t.startsWith("RITM")) {
-        url = "https://URL_PER_RITM/" + t;
+        url = "https://enel.service-now.com/nav_to.do?uri=%2Ftext_search_exact_match.do?sysparm_search=" + t;
     } else if (t.startsWith("FDQ")) {
-        url = "https://URL_PER_FDQ/" + t;
+        url = "https://sd.springlab.enel.com/plugins/servlet/desk/portal/30/" + t;
     } else {
-        url = "https://URL_PER_ALTRI/" + t;
+        url = "https://jira.springlab.enel.com/browse/" + t;
     }
 
     // Redirect immediato
