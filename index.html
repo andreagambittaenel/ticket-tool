@@ -23,8 +23,12 @@ if (!t) {
         url = "https://enel.service-now.com/nav_to.do?uri=%2Ftext_search_exact_match.do?sysparm_search=" + t;
     } else if (t.startsWith("REQ")) {
         url = "https://enel.service-now.com/nav_to.do?uri=%2Ftext_search_exact_match.do?sysparm_search=" + t;
+    } else if (t.startsWith("TASK")) {
+        url = "https://enel.service-now.com/nav_to.do?uri=%2Ftext_search_exact_match.do?sysparm_search=" + t;
     } else if (t.startsWith("FDQ")) {
         url = "https://sd.springlab.enel.com/plugins/servlet/desk/portal/30/" + t;
+    } else if (t.startsWith("INAECO")) {
+        url = "https://jira.springlab.enel.com/browse/" + t;
     } else {
         url = "https://jira.springlab.enel.com/browse/" + t;
     }
@@ -36,4 +40,5 @@ if (!t) {
 
 </body>
 </html>
+
 
